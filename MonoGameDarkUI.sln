@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameProject", "GameProject\GameProject.csproj", "{4806E218-B7F8-4C42-8342-67963759C914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkUI.Core", "DarkUI.Core\DarkUI.Core.csproj", "{2C4E9691-7FD5-4697-8054-EEAE8C82CC07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkUI.MonoGame", "DarkUI.MonoGame\DarkUI.MonoGame.csproj", "{5AF81C2F-13F0-4BFD-AA17-294DA3042660}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4806E218-B7F8-4C42-8342-67963759C914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4806E218-B7F8-4C42-8342-67963759C914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4806E218-B7F8-4C42-8342-67963759C914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4806E218-B7F8-4C42-8342-67963759C914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4E9691-7FD5-4697-8054-EEAE8C82CC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4E9691-7FD5-4697-8054-EEAE8C82CC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4E9691-7FD5-4697-8054-EEAE8C82CC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4E9691-7FD5-4697-8054-EEAE8C82CC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF81C2F-13F0-4BFD-AA17-294DA3042660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF81C2F-13F0-4BFD-AA17-294DA3042660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF81C2F-13F0-4BFD-AA17-294DA3042660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF81C2F-13F0-4BFD-AA17-294DA3042660}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
