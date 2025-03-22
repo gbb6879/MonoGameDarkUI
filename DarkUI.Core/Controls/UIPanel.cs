@@ -15,6 +15,7 @@ namespace DarkUI.Core.Controls
         public float DockSize { get; set; } = 0.25f; // Default to 25% when docked
         public bool IsDockable { get; set; } = true;
         public bool IsDraggable { get; set; } = true;
+        public bool IsDocked => Dock != DockStyle.None; // Convenience property to check if panel is docked
         public List<UIControl> Controls { get; private set; } = new List<UIControl>();
         
         // Docking properties
@@ -83,6 +84,10 @@ namespace DarkUI.Core.Controls
             // Update dock style
             Dock = dock;
             
+            // Ensure panel is visible if changing dock style
+            // This fixes the issue where docked panels become invisible
+            Visible = true;
+            
             // Reset dragging state if docked
             if (dock != DockStyle.None)
             {
@@ -96,6 +101,12 @@ namespace DarkUI.Core.Controls
         
         public override void Update(Point mousePosition, bool mouseDown)
         {
+            // Always ensure visibility when interacting with panel
+            if (Bounds.Contains(mousePosition) || _isDragging)
+            {
+                Visible = true;
+            }
+            
             base.Update(mousePosition, mouseDown);
             
             // When modal, don't update other controls if mouse is outside panel
